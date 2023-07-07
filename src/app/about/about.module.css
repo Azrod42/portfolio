@@ -1,6 +1,5 @@
 .container {
-    height: 100vh;
-    width: 80vw;
+    width: 96vw;
     margin: 0 auto;
     color: white;
     display: flex;
@@ -13,15 +12,15 @@
 }
 .containerHome {
     align-self: flex-start;
-    margin-left: 200px;
+    margin-left: 30%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30px;
     border-radius: 10px;
-    border: 1px solid white;
     box-shadow:  0 0 6px white;
+
 }
 
 .containerHome:hover {
@@ -61,6 +60,7 @@
 }
 
 .containerTechStack {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;

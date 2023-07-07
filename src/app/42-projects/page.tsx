@@ -44,7 +44,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     <p className={styles.p}>Teammate: <a className={styles.repoLink} target="_blank" href="https://lfantine.fr">flantine</a></p>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/ft_irc.png'} alt={'ft_irc'} width={256} height={256} />
+                    <Image src={'/42-project/ft_irc.png'} alt={'ft_irc'} width={256} height={256} className={styles.img}/>
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -59,7 +59,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/inception.png'} alt={'ft_irc'} width={256} height={206} />
+                    <Image src={'/42-project/inception.png'} alt={'ft_irc'} width={256} height={206} className={styles.img}/>
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -76,7 +76,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     <p className={styles.p}>Teammate: <a className={styles.repoLink} target="_blank" href="https://lfantine.fr">flantine</a></p>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/cub3d.png'} alt={'ft_irc'} width={356} height={256} />
+                    <Image src={'/42-project/cub3d.png'} alt={'ft_irc'} width={356} height={256} className={styles.img}/>
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -89,7 +89,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/netpractice.png'} alt={'ft_irc'} width={356} height={256} />
+                    <Image src={'/42-project/netpractice.png'} alt={'ft_irc'} width={356} height={256} className={styles.img} />
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -102,7 +102,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/netpractice.png'} alt={'ft_irc'} width={356} height={256} />
+                    <Image src={'/42-project/netpractice.png'} alt={'ft_irc'} width={356} height={256} className={styles.img}/>
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -118,7 +118,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     <p className={styles.p}>Teammate: <a className={styles.repoLink} target="_blank" href="https://lfantine.fr">flantine</a></p>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/minishell.png'} alt={'ft_irc'} width={406} height={256} />
+                    <Image src={'/42-project/minishell.png'} alt={'ft_irc'} width={406} height={256} className={styles.img} />
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -132,7 +132,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/philosopher.png'} alt={'ft_irc'} width={256} height={256} />
+                    <Image src={'/42-project/philosopher.png'} alt={'ft_irc'} width={256} height={256} className={styles.img} />
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -147,7 +147,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     <p className={styles.p}>Repo : <a className={styles.repoLink} target="_blank" href="https://github.com/Azrod42/push_swap_42">Github</a></p>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/push_swap.gif'} alt={'ft_irc'} width={256} height={256} />
+                    <Image src={'/42-project/push_swap.gif'} alt={'ft_irc'} width={256} height={256} className={styles.img} />
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -162,7 +162,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/minitalk.webp'} alt={'ft_irc'} width={456} height={256} />
+                    <Image src={'/42-project/minitalk.webp'} alt={'ft_irc'} width={456} height={256} className={styles.img}/>
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -178,7 +178,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     <p className={styles.pRed}>I recreated this game on the web : <a className={styles.repoLink} target="_blank" href="https://azrod.dev/pages/so-long/so-long.html">PLAY</a></p>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/so_long.png'} alt={'so_long'} width={456} height={256} />
+                    <Image src={'/42-project/so_long.png'} alt={'so_long'} width={456} height={256} className={styles.img} />
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -191,7 +191,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/ft_printf.png'} alt={'so_long'} width={456} height={256} />
+                    <Image src={'/42-project/ft_printf.png'} alt={'so_long'} width={456} height={256} className={styles.img}/>
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -204,7 +204,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/gnl.png'} alt={'so_long'} width={456} height={256} />
+                    <Image src={'/42-project/gnl.png'} alt={'so_long'} width={456} height={256} className={styles.img} />
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -222,7 +222,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/born2beroot.jpeg'} alt={'so_long'} width={356} height={256} />
+                    <Image src={'/42-project/born2beroot.jpeg'} alt={'so_long'} width={356} height={256} className={styles.img} />
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -235,7 +235,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                     </div>
                 </div>
                 <div className="project-image">
-                    <Image src={'/42-project/libft.png'} alt={'so_long'} width={356} height={256} />
+                    <Image src={'/42-project/libft.png'} alt={'so_long'} width={356} height={256} className={styles.img}/>
                 </div>
             </div>
             <hr className={styles.hr} />
@@ -245,7 +245,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
 
 
 
-
+            {/*<Image src={'/profile-image.png'} alt={'profile-image'} width={4096} height={4096} className={styles.profileImg}/>*/}
         </div>
     )
 }
