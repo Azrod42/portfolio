@@ -247,7 +247,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
 
 
 
-            {/*<Image src={'/profile-image.png'} alt={'profile-image'} width={4096} height={4096} className={styles.profileImg}/>*/}
+            <Image src={'/profile-image.png'} alt={'profile-image'} width={4096} height={4096} className={styles.profileImg}/>
         </div>
     )
 }

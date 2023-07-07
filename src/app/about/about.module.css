@@ -12,7 +12,7 @@
 }
 .containerHome {
     align-self: flex-start;
-    margin-left: 30%;
+    margin: 0 auto;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -39,15 +39,23 @@
     margin: 0 auto;
     z-index: 0;
     object-fit: cover;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+    width: 337px;
+    height: 337px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #101010;
+
 }
 
 .containerAboutMe {
     display: flex;
     flex-direction: column;
     /*border: 1px solid blue;*/
+    background-color: #101010;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #101010;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .p {
@@ -65,10 +73,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #101010;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #101010;
 }
 
 .h1TechStack{
     margin: 0 0 10px;
+}
+
+.hr {
+    width: 40%;
 }
 
 @media (max-width: 715px) {
@@ -82,5 +97,4 @@
         width: 100%;
         max-width: 380px;
     }
-    
 }
