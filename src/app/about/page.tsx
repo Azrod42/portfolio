@@ -32,7 +32,7 @@ const About: React.FC<AboutProps> = () => {
                 <Image src={'/about3.jpg'} alt={'banner-about'} width={1000} height={1000} className={styles.pictureDesc}/>
                 <div className={styles.containerAboutMe}>
                     <p className={styles.p}>After working in esports for 4 years, I decided to change my career path to one that had always attracted me, development.</p>
-                    <p className={styles.p}>I joined the wonderful world of 42, with its project-based pedagogy, where I'm currently 5/152 of my prom.</p>
+                    <p className={styles.p}>I joined the wonderful world of 42, with its project-based pedagogy, where I m currently 5/152 of my prom.</p>
                     <p className={styles.p}>At the moment, my aim is to move into web development.</p>
                     <p className={styles.pItalic}>Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that matter.</p>
                 </div>

@@ -185,7 +185,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
             <div className={styles.project} id="ft_printf">
                 <div className={styles.projectText}>
                     <h2 className={styles.h2}>ft_printf :</h2>
-                    <p className={styles.p}>The task is to recreate the printf function from the C standard library. ft_printf works exactly the same way as printf, but "only" with the following flags: %cspdiuxX.</p>
+                    <p className={styles.p}>The task is to recreate the printf function from the C standard library. ft_printf works exactly the same way as printf, but `&quot;`only`&quot;` with the following flags: %cspdiuxX.</p>
                     <div className={styles.stack}>
                         <p className={styles.stackType}>{'\xa0\xa0#C\xa0\xa0'}</p>
                     </div>
@@ -229,7 +229,7 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
             <div className={styles.projectR} id="libft">
                 <div className={styles.projectText}>
                     <h2 className={styles.h2}>Born2beroot :</h2>
-                    <p className={styles.p}>The goal of this project is to have us create a library containing many commonly used functions in C, but that we must code from scratch. We will use our own standard library "libft" in future 42 projects.</p>
+                    <p className={styles.p}>The goal of this project is to have us create a library containing many commonly used functions in C, but that we must code from scratch. We will use our own standard library `&quot;`libft`&quot;` in future 42 projects.</p>
                     <div className={styles.stack}>
                         <p className={styles.stackType}>{'\xa0\xa0#C\xa0\xa0'}</p>
                     </div>
