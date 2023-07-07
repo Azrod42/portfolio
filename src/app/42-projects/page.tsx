@@ -216,6 +216,8 @@ const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
                         <p className={styles.stackType}>{'\xa0\xa0#Debian\xa0\xa0'}</p>
                         <p className={styles.stackType}>{'\xa0\xa0#Security\xa0\xa0'}</p>
                         <p className={styles.stackType}>{'\xa0\xa0#Encryption\xa0\xa0'}</p>
+                    </div>
+                    <div className={styles.stack}>
                         <p className={styles.stackType}>{'\xa0\xa0#Wordpress\xa0\xa0'}</p>
                         <p className={styles.stackType}>{'\xa0\xa0#Monitoring\xa0\xa0'}</p>
                         <p className={styles.stackType}>{'\xa0\xa0#Bash\xa0\xa0'}</p>
