@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   color: whitesmoke;
+  overflow: hidden;
 }
 
 .profileImg {
@@ -11,7 +12,7 @@
   min-width: 600px;
   height: 100vh;
   min-height: 600px;
-  filter: blur(1.5px);
+  filter: blur(0.5px);
   position: absolute;
   bottom: 0;
   left: 35%;
@@ -38,7 +39,12 @@
 .h2 {
   font-size: 40px;
   font-weight: 500;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 30px;
+}
+
+.shortDesc {
+  margin: 0 0 0 30px;
+  font-weight: 200;
 }
 
 .a {
@@ -81,10 +87,10 @@
 
 .p:hover + hr {
     border-color: white;
-    width: 100px;
+    width: 50px;
 }
 .p:hover {
-  color: rgb(190,70,71);
+  color: rgb(251, 240, 43);
 }
 .rssContainer {
   display: flex;
@@ -107,14 +113,17 @@
 @media (max-width: 950px) {
   .container {
     left: 5%;
+    overflow: hidden;
+
   }
   .h1 {
-    font-size: 12vw;
+    font-size: 45px;
   }
   .h2 {
-    font-size: 8vw;
+    font-size: 29px;
   }
   .profileImg {
     left: -15%;
+    overflow: hidden;
   }
 }
