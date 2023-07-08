@@ -27,7 +27,6 @@ const About: React.FC<AboutProps> = () => {
 
     return (
         <div className={styles.container}>
-            <hr className={styles.hr} />
             <div className={styles.containerHome} ref={refHome}></div>
             <hr className={styles.hr} />
             <div className={styles.shortDesc}>

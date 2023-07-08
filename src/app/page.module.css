@@ -126,4 +126,7 @@
     left: -15%;
     overflow: hidden;
   }
+  .shortDesc {
+    text-shadow: 0 0 9px black;
+  }
 }
