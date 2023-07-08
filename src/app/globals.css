@@ -1,4 +1,12 @@
+html {
+    height: auto;
+}
 body {
     background-color: black;
     /*overflow: hidden;*/
+    display: flex;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
 }

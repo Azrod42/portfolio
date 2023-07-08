@@ -27,6 +27,8 @@
     margin: 0;
     color: white;
     font-size: 1.1rem;
+    text-align: justify;
+
 }
 
 .project {
@@ -80,7 +82,7 @@
     color: white;
 }
 
-@media (max-width: 585px) {
+@media (max-width: 750px) {
     .project {
         flex-direction: column;
         justify-content: center;
