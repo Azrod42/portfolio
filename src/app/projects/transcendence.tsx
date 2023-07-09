@@ -3,6 +3,7 @@ import React, {useEffect, useRef} from "react";
 import styles from "./projectGlobal.module.css";
 import {Figtree, Orbitron} from "next/font/google";
 import Image from "next/image";
+import {motion, useAnimationControls} from "framer-motion"
 
 interface ProjectsProps {
 }
@@ -12,7 +13,6 @@ const fontT = Orbitron({ subsets: ['latin'], weight: ['600', '800']})
 
 
 const Transcendence: React.FC<ProjectsProps> = () => {
-
     return (
         <div className={styles.container}>
             <h1 className={[styles.h1, fontT.className].join(' ')}>ft_transcendence</h1>

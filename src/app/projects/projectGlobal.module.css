@@ -85,4 +85,9 @@
     .p, .pSpace{
         font-size: 0.9rem;
     }
-}
+    .linkBtn {
+        position: relative;
+        align-self: flex-end;
+        /*margin-top: 50px;*/
+    }
+    }
