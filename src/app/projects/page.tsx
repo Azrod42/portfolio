@@ -7,17 +7,20 @@ import {Orbitron} from "next/font/google";
 import {motion, useAnimationControls} from "framer-motion"
 import Image from "next/image";
 import Background from "@/app/(backgound)/background";
+import Button from "@/app/(button)/button";
 
 interface ProjectsProps {
 }
 
 const fontT = Orbitron({ subsets: ['latin'], weight: ['600', '800']})
 
+const transitionDuration = 0.2;
+
 const variants = {
-    home: { y: 1200, transition: { duration: 0.5 } },
+    home: { y: 1200, transition: { duration: transitionDuration } },
     hidden: { y: 1200, transition: { duration: 0.001 } },
-    visible: { y :0 , transition: { duration: 0.5 } },
-    exit: {y :-1200 , transition: { duration: 0.5 } }
+    visible: { y :0 , transition: { duration: transitionDuration } },
+    exit: {y :-1200 , transition: { duration: transitionDuration } }
 };
 
 
@@ -26,6 +29,8 @@ const Projects: React.FC<ProjectsProps> = () => {
     const controls = useAnimationControls();
 
     function changeProject(num: number) {
+        if (num == displayProject)
+            return;
         if (!num) {
             controls.start('home');
             return;
@@ -33,16 +38,17 @@ const Projects: React.FC<ProjectsProps> = () => {
         controls.start('exit');
         setTimeout(() => {
             controls.start('hidden');
-        },500);
+        },transitionDuration * 1000);
         setTimeout(() => {
             setDisplayProject(num);
             controls.start('visible');
-        },600);
+        },(transitionDuration * 1000) + 100);
     }
 
     return (
         <div className={styles.mainContainer}>
             <div className={styles.container}>
+                <div className={styles.buttonHome}><Button buttonName={'Home'} buttonType={0} buttonUrlExtern={''} buttonUrlIntern={'/'} /></div>
                 <div className={styles.layer} onClick={() => setDisplayProject(0)}></div>
                 <div className={styles.projects}>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(1)}>transcendence</h1>

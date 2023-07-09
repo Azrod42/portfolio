@@ -1,9 +1,7 @@
-'use client'
 import React, {useEffect, useRef} from "react";
 import styles from "./projectGlobal.module.css";
 import {Figtree, Orbitron} from "next/font/google";
 import Image from "next/image";
-import {motion, useAnimationControls} from "framer-motion"
 
 interface ProjectsProps {
 }

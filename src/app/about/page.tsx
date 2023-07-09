@@ -4,31 +4,17 @@ import styles from "./about.module.css";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 import Background from "@/app/(backgound)/background";
+import Button from "@/app/(button)/button";
 
 interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = () => {
-    const refHome: React.MutableRefObject<any> = useRef();
-    const {push} = useRouter();
-
-    useEffect(() => {
-        refHome.current.addEventListener('mouseover', () => {
-            refHome.current.innerText = "\xa0\xa0Home.tsorabel\xa0\xa0";
-            setTimeout(() => {
-                if (refHome.current)
-                    refHome.current.innerText = '\xa0\xa0Home\xa0\xa0';
-            }, 2000)
-        });
-        refHome.current.addEventListener('click', () => {
-            push('/');
-        })
-        refHome.current.innerText = '\xa0\xa0Home\xa0\xa0';
-    }, [])
 
     return (
         <div className={styles.container}>
-            <div className={styles.containerHome} ref={refHome}></div>
+            <Button buttonName={'Home'} buttonType={0} buttonUrlExtern={''} buttonUrlIntern={'/'} />
+            <div className={styles.containerHome}></div>
             <hr className={styles.hr} />
             <div className={styles.shortDesc}>
                 <Image src={'/about3.jpg'} alt={'banner-about'} width={1000} height={1000} className={styles.pictureDesc}/>

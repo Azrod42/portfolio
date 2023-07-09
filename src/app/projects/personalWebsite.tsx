@@ -1,8 +1,8 @@
-'use client'
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import styles from "./projectGlobal.module.css";
 import {Figtree, Orbitron} from "next/font/google";
 import Image from "next/image";
+import Button from "@/app/(button)/button";
 
 interface PersonalWebsiteProps {
 }
@@ -12,12 +12,9 @@ const fontT = Orbitron({ subsets: ['latin'], weight: ['600', '800']})
 
 
 const PersonalWebsite: React.FC<PersonalWebsiteProps> = () => {
-    function onClickAccess () {window.open('https://azrod.dev', '_blank');}
-
-
     return (
         <div className={styles.container}>
-            <div className={styles.linkBtn} onClick={() => onClickAccess()}>Access</div>
+            <Button buttonName={'Access'} buttonType={1} buttonUrlExtern={'https://azrod.dev'} buttonUrlIntern={'/'} />
             <h1 className={[styles.h1, fontT.className].join(' ')}>first_website</h1>
             <div className={fontP.className}>
                 <p className={styles.p}>First website made in html css and JavaScript with features such as :</p>
@@ -34,7 +31,7 @@ const PersonalWebsite: React.FC<PersonalWebsiteProps> = () => {
                 <span className={styles.stack}>#css</span>
                 <span className={styles.stack}>#JavaScript</span>
             </div>
-            <Image src={'/personal-website.jpeg'} alt={'personal-website'} width={600} height={300} className={styles.img} onClick={() => onClickAccess()} />
+            <Image src={'/personal-website.jpeg'} alt={'personal-website'} width={600} height={300} className={styles.img} />
         </div>
     )
 }

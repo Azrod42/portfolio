@@ -4,6 +4,7 @@ import styles from "./42-project.module.css";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 import { Gruppo } from "next/font/google";
+import Button from "@/app/(button)/button";
 
 interface ProjectFortyTowProps {
 }
@@ -11,26 +12,10 @@ interface ProjectFortyTowProps {
 const fontP = Gruppo({ subsets: ['latin'], weight: ['400']})
 
 const ProjectFortyTow: React.FC<ProjectFortyTowProps> = () => {
-    const refHome: React.MutableRefObject<any> = useRef();
-    const {push} = useRouter();
-
-    useEffect(() => {
-        refHome.current.addEventListener('mouseover', () => {
-            refHome.current.innerText = "\xa0\xa0Home.tsorabel\xa0\xa0";
-            setTimeout(() => {
-                if (refHome.current)
-                    refHome.current.innerText = '\xa0\xa0Home\xa0\xa0';
-            }, 2000)
-        });
-        refHome.current.addEventListener('click', () => {
-            push('/');
-        })
-        refHome.current.innerText = '\xa0\xa0Home\xa0\xa0';
-    }, [])
 
     return (
         <div className={styles.container}>
-            <div className={styles.containerHome} ref={refHome}></div>
+            <Button buttonName={'Home'} buttonType={0} buttonUrlExtern={''} buttonUrlIntern={'/'} />
             <h1 className={styles.h1}>42 Cursus</h1>
             <hr className={styles.hr} />
             <div className={styles.project} id="ft_irc">

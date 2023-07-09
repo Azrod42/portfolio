@@ -10,21 +10,6 @@
     position: relative;
     z-index: 10;
 }
-.containerHome {
-    align-self: flex-start;
-    margin: 20px auto 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    border-radius: 10px;
-    box-shadow:  0 0 6px white;
-
-}
-
-.containerHome:hover {
-}
 
 .shortDesc {
     width: 700px;
