@@ -21,8 +21,8 @@ export default function Home() {
           <p className={styles.shortDesc}> Passionate about code, especially webdev !</p>
           <hr className={styles.separator}/>
           <div className={styles.navDiv} ><p className={styles.p} onClick={() => push('/about')}>ABOUT</p><hr className={styles.hr}/></div>
-          <div className={styles.navDiv} ><p className={styles.p} onClick={() => push('/42-projects')}>42 PROJECTS</p><hr className={styles.hr}/></div>
           <div className={styles.navDiv} ><p className={styles.p} onClick={() => push('/projects')}>PROJECTS</p><hr className={styles.hr}/></div>
+          <div className={styles.navDiv} ><p className={styles.p} onClick={() => push('/42-projects')}>42 PROJECTS</p><hr className={styles.hr}/></div>
           <div className={styles.rssContainer}>
               <Image src={'/github.svg'} alt={'logo-github'} width={25} height={25} className={styles.rss} onClick={onClickGithub} />
               <Image src={'/twitter.svg'} alt={'logo-github'} width={25} height={25} className={styles.rss} onClick={onClickTwitter}/>
