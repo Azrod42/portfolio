@@ -5,6 +5,8 @@ import Project from "@/app/projects/transcendence";
 import PersonalWebsite from "@/app/projects/personalWebsite";
 import {Orbitron} from "next/font/google";
 import {motion, useAnimationControls} from "framer-motion"
+import Image from "next/image";
+import Background from "@/app/(backgound)/background";
 
 interface ProjectsProps {
 }

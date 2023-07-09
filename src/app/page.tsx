@@ -2,6 +2,7 @@
 import styles from './page.module.css'
 import Image from "next/image";
 import {useRouter} from "next/navigation";
+import Background from "@/app/(backgound)/background";
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
 
         return (
     <main className={styles.main}>
+        <Background />
       <div className={styles.container}>
           <h1 className={styles.h1}>Tom Sorabella</h1>
           <h2 className={styles.h2}>Student @ <a target={'_blank'} href={'https://42nice.fr/'} className={styles.a}>42 Nice</a></h2>

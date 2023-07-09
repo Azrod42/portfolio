@@ -3,6 +3,7 @@ import React, {useEffect, useRef} from "react";
 import styles from "./about.module.css";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
+import Background from "@/app/(backgound)/background";
 
 interface AboutProps {
 }
