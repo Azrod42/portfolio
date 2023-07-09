@@ -51,7 +51,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 <div className={styles.buttonHome}><Button buttonName={'Home'} buttonType={0} buttonUrlExtern={''} buttonUrlIntern={'/'} /></div>
                 <div className={styles.layer} onClick={() => setDisplayProject(0)}></div>
                 <div className={styles.projects}>
-                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(1)}>transcendence</h1>
+                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(1)}>ft_transcendence</h1>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(2)}>personal_website</h1>
                 </div>
                 <hr className={styles.hr}/>
