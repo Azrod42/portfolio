@@ -71,6 +71,11 @@
     width: 40%;
 }
 
+.pdf {
+    max-width: 800px;
+
+}
+
 @media (max-width: 715px) {
     .shortDesc {
         flex-direction: column-reverse;
