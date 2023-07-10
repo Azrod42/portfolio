@@ -81,7 +81,7 @@
     right: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 830px) {
     .buttonHome {
         width: 100px;
         height: 60px;

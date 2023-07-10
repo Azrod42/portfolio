@@ -33,7 +33,6 @@ const About: React.FC<AboutProps> = () => {
             <hr className={styles.hr} />
             <h1 className={styles.h1TechStack}>📄 CV: :</h1>
             <iframe src="/CV.pdf" width="100%" height="1200" className={styles.pdf}> </iframe>
-
         </div>
     )
 }
