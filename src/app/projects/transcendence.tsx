@@ -2,6 +2,9 @@ import React, {useEffect, useRef} from "react";
 import styles from "./projectGlobal.module.css";
 import {Figtree, Orbitron} from "next/font/google";
 import Image from "next/image";
+import Button from "@/app/(button)/button";
+import {useRouter} from "next/navigation";
+
 
 interface ProjectsProps {
 }
@@ -11,8 +14,12 @@ const fontT = Orbitron({ subsets: ['latin'], weight: ['600', '800']})
 
 
 const Transcendence: React.FC<ProjectsProps> = () => {
+    function redirect () {
+        window.open('http://51.254.37.204:3000/', '_blank');
+    }
     return (
         <div className={styles.container}>
+            <Button buttonName={'Access'} buttonType={1} buttonUrlExtern={'http://51.254.37.204:3000/'} buttonUrlIntern={'/'} />
             <h1 className={[styles.h1, fontT.className].join(' ')}>ft_transcendence</h1>
             <div className={fontP.className}>
                 <p className={styles.p}>Web development project for 42. The goal is to create an online multiplayer Pong with features such as:</p>
@@ -36,7 +43,7 @@ const Transcendence: React.FC<ProjectsProps> = () => {
                 <span className={styles.stack}>#Docker</span>
                 <span className={styles.stack}>#Ngix</span>
             </div>
-            <Image src={'/transcendence.jpeg'} alt={'transcendence'} width={600} height={300} className={styles.img}/>
+            <Image src={'/transcendence.jpeg'} alt={'transcendence'} width={600} height={300} className={styles.img} onClick={redirect}/>
         </div>
     )
 }
