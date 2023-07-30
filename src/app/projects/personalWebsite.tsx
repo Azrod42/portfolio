@@ -22,7 +22,6 @@ const PersonalWebsite: React.FC<PersonalWebsiteProps> = () => {
                 <p className={styles.p}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Weather api tools</p>
                 <p className={styles.p}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-so_long 42 project</p>
                 <p className={styles.p}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-...</p>
-                <p className={styles.pSpace}>Website build in Single Page Application.</p>
             </div>
             <hr className={styles.hr}/>
             {/*<h2 className={[styles.h2, fontP.className].join(' ')}>build with</h2>*/}

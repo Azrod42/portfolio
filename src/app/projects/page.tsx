@@ -8,6 +8,7 @@ import {motion, useAnimationControls} from "framer-motion"
 import Image from "next/image";
 import Background from "@/app/(backgound)/background";
 import Button from "@/app/(button)/button";
+import PersonalWebsite3D from "@/app/projects/personalWebsite3D";
 
 interface ProjectsProps {
 }
@@ -52,7 +53,8 @@ const Projects: React.FC<ProjectsProps> = () => {
                 <div className={styles.layer} onClick={() => setDisplayProject(0)}></div>
                 <div className={styles.projects}>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(1)}>ft_transcendence</h1>
-                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(2)}>personal_website</h1>
+                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(2)}>!_WIP_!_portfolio_3d</h1>
+                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(3)}>personal_website</h1>
                 </div>
                 <hr className={styles.hr}/>
                 <motion.div className={styles.preview}
@@ -62,7 +64,8 @@ const Projects: React.FC<ProjectsProps> = () => {
                             exit="exit"
                 >
                     {displayProject == 1 ? <Project /> : <> </>}
-                    {displayProject == 2 ? <PersonalWebsite /> : <> </>}
+                    {displayProject == 2 ? <PersonalWebsite3D /> : <> </>}
+                    {displayProject == 3 ? <PersonalWebsite /> : <> </>}
 
                 </motion.div>
             </div>

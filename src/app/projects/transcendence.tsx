@@ -1,9 +1,8 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import styles from "./projectGlobal.module.css";
 import {Figtree, Orbitron} from "next/font/google";
 import Image from "next/image";
 import Button from "@/app/(button)/button";
-import {useRouter} from "next/navigation";
 
 
 interface ProjectsProps {
@@ -28,7 +27,7 @@ const Transcendence: React.FC<ProjectsProps> = () => {
                 <p className={styles.p}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Matchmaking (ranked, un-ranked, custom appearance...)</p>
                 <p className={styles.p}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-User profile (player stats, add friend, block user...)</p>
                 <p className={styles.p}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Live information (users connected, friend status ... )</p>
-                {/*<p className={styles.pSpace}>Website build in Single Page Application.</p>*/}
+                <p className={styles.pSpace}>Website build in Single Page Application.</p>
             </div>
             <hr className={styles.hr}/>
             {/*<h2 className={[styles.h2, fontP.className].join(' ')}>build with</h2>*/}
@@ -43,7 +42,7 @@ const Transcendence: React.FC<ProjectsProps> = () => {
                 <span className={styles.stack}>#Docker</span>
                 <span className={styles.stack}>#Ngix</span>
             </div>
-            <Image src={'/transcendence.jpeg'} alt={'transcendence'} width={600} height={300} className={styles.img} onClick={redirect}/>
+            <Image src={'/transcendence.gif'} alt={'transcendence'} width={600} height={300} className={styles.img} onClick={redirect}/>
         </div>
     )
 }
