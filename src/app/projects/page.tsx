@@ -9,6 +9,7 @@ import Image from "next/image";
 import Background from "@/app/(backgound)/background";
 import Button from "@/app/(button)/button";
 import PersonalWebsite3D from "@/app/projects/personalWebsite3D";
+import Deezy from "@/app/projects/deezy";
 
 interface ProjectsProps {
 }
@@ -53,6 +54,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 <div className={styles.layer} onClick={() => setDisplayProject(0)}></div>
                 <div className={styles.projects}>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(1)}>ft_transcendence</h1>
+                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(4)}>deezy</h1>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(2)}>!_WIP_!_portfolio_3d</h1>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(3)}>personal_website</h1>
                 </div>
@@ -66,6 +68,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                     {displayProject == 1 ? <Project /> : <> </>}
                     {displayProject == 2 ? <PersonalWebsite3D /> : <> </>}
                     {displayProject == 3 ? <PersonalWebsite /> : <> </>}
+                    {displayProject == 4 ? <Deezy /> : <> </>}
 
                 </motion.div>
             </div>
