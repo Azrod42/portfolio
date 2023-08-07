@@ -55,7 +55,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 <div className={styles.projects}>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(1)}>ft_transcendence</h1>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(4)}>deezy</h1>
-                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(2)}>!_WIP_!_portfolio_3d</h1>
+                    <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(2)}>🚧 🏗️portfolio_3d</h1>
                     <h1 className={[styles.h1, fontT.className].join(' ')} onClick={() => changeProject(3)}>personal_website</h1>
                 </div>
                 <hr className={styles.hr}/>

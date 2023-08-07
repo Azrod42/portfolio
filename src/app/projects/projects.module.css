@@ -39,10 +39,12 @@
     font-size: 2rem;
     transition-duration: 0.5s;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .h1:hover {
     font-size: 3rem;
+    overflow: hidden;
 }
 
 .projects {
