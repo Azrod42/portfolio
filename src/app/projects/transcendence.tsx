@@ -14,11 +14,11 @@ const fontT = Orbitron({ subsets: ['latin'], weight: ['600', '800']})
 
 const Transcendence: React.FC<ProjectsProps> = () => {
     function redirect () {
-        window.open('http://51.254.37.204:3000/', '_blank');
+        window.open(process.env.TRANSCENDENCE, '_blank');
     }
     return (
         <div className={styles.container}>
-            <Button buttonName={'Access'} buttonType={1} buttonUrlExtern={'http://51.254.37.204:3000/'} buttonUrlIntern={'/'} />
+            <Button buttonName={'Access'} buttonType={1} buttonUrlExtern={process.env.TRANSCENDENCE!} buttonUrlIntern={'/'} />
             <h1 className={[styles.h1, fontT.className].join(' ')}>ft_transcendence</h1>
             <div className={fontP.className}>
                 <p className={styles.p}>Web development project for 42. The goal is to create an online multiplayer Pong with features such as:</p>

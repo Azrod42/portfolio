@@ -14,11 +14,11 @@ const fontT = Orbitron({ subsets: ['latin'], weight: ['600', '800']})
 
 const Deezy: React.FC<DeezyProps> = () => {
     function redirect () {
-        window.open('http://51.254.37.204:4200/', '_blank');
+        window.open(process.env.DEEZY, '_blank');
     }
     return (
         <div className={styles.container}>
-            <Button buttonName={'Access'} buttonType={1} buttonUrlExtern={'http://51.254.37.204:4200/'} buttonUrlIntern={'/'} />
+            <Button buttonName={'Access'} buttonType={1} buttonUrlExtern={process.env.DEEZY!} buttonUrlIntern={'/'} />
             <h1 className={[styles.h1, fontT.className].join(' ')}>deezy</h1>
             <div className={fontP.className}>
                 <p className={styles.p}>Deezy is a small web project using the Deezer api with the following functionality:  </p>
