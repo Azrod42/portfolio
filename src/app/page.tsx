@@ -3,10 +3,20 @@ import styles from './page.module.css'
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 import Background from "@/app/(backgound)/background";
+import Loading from "@/app/(button)/loading";
+import React, {useEffect, useState} from "react";
 
 export default function Home() {
 
     const {push} = useRouter();
+    const [loading, setLoading] = useState<boolean>(true);
+
+    useEffect(() => {
+        const timeout = setTimeout(() =>{
+            setLoading(false);
+        }, 4000);
+        return () => clearTimeout(timeout);
+    }, []);
 
     function onClickGithub () {window.open('https://github.com/Azrod42', '_blank');}
     function onClickTwitter () {window.open('https://twitter.com/A_Azrod_FR', '_blank');}
@@ -14,6 +24,7 @@ export default function Home() {
 
         return (
     <main className={styles.main}>
+        {loading ? <Loading /> : <></>}
         <Background />
       <div className={styles.container}>
           <h1 className={styles.h1}>Tom Sorabella</h1>

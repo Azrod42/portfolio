@@ -4,6 +4,7 @@ import { Barlow } from 'next/font/google'
 import Background from "@/app/(backgound)/background";
 import React from "react";
 import {Analytics} from "@vercel/analytics/react";
+import Loading from "@/app/(button)/loading";
 
 const font = Barlow({ subsets: ['latin'], weight: ['200', '300', '500', '700']})
 
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Analytics />
-      <body className={font.className}><Background />{children}</body>
+      <body className={font.className}><Background />
+        {children}
+      </body>
     </html>
   )
 }
