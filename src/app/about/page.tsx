@@ -15,7 +15,7 @@ const About: React.FC<AboutProps> = () => {
         <div className={styles.container}>
             <Button buttonName={'Home'} buttonType={0} buttonUrlExtern={''} buttonUrlIntern={'/'} />
             <div className={styles.containerHome}></div>
-            <hr className={styles.hr} />
+            {/*<hr className={styles.hr} />*/}
             <div className={styles.shortDesc}>
                 <Image src={'/about3.jpg'} alt={'banner-about'} width={1000} height={1000} className={styles.pictureDesc}/>
                 <div className={styles.containerAboutMe}>
@@ -25,7 +25,7 @@ const About: React.FC<AboutProps> = () => {
                     <p className={styles.pItalic}>Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that matter.</p>
                 </div>
             </div>
-            <hr className={styles.hr} />
+            {/*<hr className={styles.hr} />*/}
             <div className={styles.containerTechStack}>
 
                 <h1 id="-languages-">💻 LANGUAGES:</h1>

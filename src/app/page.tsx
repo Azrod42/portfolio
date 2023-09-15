@@ -24,7 +24,7 @@ export default function Home() {
 
         return (
     <main className={styles.main}>
-        {loading ? <Loading /> : <></>}
+        {/*{loading ? <Loading /> : <></>}*/}
         <Background />
       <div className={styles.container}>
           <h1 className={styles.h1}>Tom Sorabella</h1>
